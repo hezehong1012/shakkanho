@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "base": { "length": "m", "area": "m²", "volume": "L", "weight": "kg", "volumeSolid": "m³" },
+    "note": "to_base は基準単位に対する換算係数を分数で保持する（浮動小数の丸め誤差を避けるため）"
+  },
+  "units": [
+    { "id": "sun", "cat": "length", "ja": "寸", "romaji": "sun", "num": 1, "den": 33, "alias": ["曲尺の寸"], "note": null },
+    { "id": "shaku", "cat": "length", "ja": "尺", "romaji": "shaku", "num": 10, "den": 33, "alias": ["曲尺", "かね尺"], "note": null },
+    { "id": "ken", "cat": "length", "ja": "間", "romaji": "ken", "num": 20, "den": 11, "alias": ["6尺"], "note": null },
+    { "id": "jo", "cat": "length", "ja": "丈", "romaji": "jō", "num": 100, "den": 33, "alias": ["10尺"], "note": null },
+    { "id": "cho", "cat": "length", "ja": "町", "romaji": "chō", "num": 1200, "den": 11, "alias": ["60間"], "note": "長さの町。面積の町歩とは別単位" },
+    { "id": "ri", "cat": "length", "ja": "里", "romaji": "ri", "num": 43200, "den": 11, "alias": ["36町"], "note": null },
+    { "id": "hiro", "cat": "length", "ja": "尋", "romaji": "hiro", "num": 20, "den": 11, "alias": ["6尺"], "note": "水深・地質調査で使われる6尺" },
+    { "id": "kujira", "cat": "length", "ja": "鯨尺", "romaji": "kujira-shaku", "num": 25, "den": 66, "alias": ["1尺2寸5分"], "note": "和装・着物用。曲尺の1.25倍" },
+    { "id": "kujira-sun", "cat": "length", "ja": "鯨寸", "romaji": "kujira-sun", "num": 5, "den": 132, "alias": [], "note": "鯨尺の1/10" },
+    { "id": "m", "cat": "length", "ja": "メートル", "romaji": "m", "num": 1, "den": 1, "alias": ["m"], "note": null },
+    { "id": "km", "cat": "length", "ja": "キロメートル", "romaji": "km", "num": 1000, "den": 1, "alias": ["km"], "note": null },
+    { "id": "cm", "cat": "length", "ja": "センチメートル", "romaji": "cm", "num": 1, "den": 100, "alias": ["cm"], "note": null },
+    { "id": "mm", "cat": "length", "ja": "ミリメートル", "romaji": "mm", "num": 1, "den": 1000, "alias": ["mm"], "note": null },
+
+    { "id": "tsubo", "cat": "area", "ja": "坪", "romaji": "tsubo", "num": 400, "den": 121, "alias": ["1間×1間"], "note": null },
+    { "id": "tatami", "cat": "area", "ja": "帖", "romaji": "jō-tatami", "num": 162, "den": 100, "alias": ["畳（不動産広告基準）"], "note": "不動産広告の換算基準 1帖=1.62㎡" },
+    { "id": "tatami-kyo", "cat": "area", "ja": "畳（京間）", "romaji": "tatami-kyo", "num": 228, "den": 125, "alias": ["191×95.5cm"], "note": "京都・大阪など西日本の伝統寸法" },
+    { "id": "tatami-chukyo", "cat": "area", "ja": "畳（中京間）", "romaji": "tatami-chukyo", "num": 8281, "den": 5000, "alias": ["182×91cm"], "note": "名古屋・東海地方で多用" },
+    { "id": "tatami-edo", "cat": "area", "ja": "畳（江戸間）", "romaji": "tatami-edo", "num": 968, "den": 625, "alias": ["176×88cm"], "note": "関東の一般住宅で多い" },
+    { "id": "tatami-danchi", "cat": "area", "ja": "畳（団地間）", "romaji": "tatami-danchi", "num": 289, "den": 200, "alias": ["170×85cm"], "note": "集合住宅・団地の共通寸法" },
+    { "id": "tan", "cat": "area", "ja": "反", "romaji": "tan", "num": 120000, "den": 121, "alias": ["300坪"], "note": "田畑の面積。1反＝300坪" },
+    { "id": "chobu", "cat": "area", "ja": "町歩", "romaji": "chōbu", "num": 1200000, "den": 121, "alias": ["10反", "3000坪"], "note": "1町歩＝10反" },
+    { "id": "se", "cat": "area", "ja": "畝", "romaji": "se", "num": 12000, "den": 121, "alias": ["30坪"], "note": "1畝＝30坪" },
+    { "id": "m2", "cat": "area", "ja": "平方メートル", "romaji": "m2", "num": 1, "den": 1, "alias": ["㎡", "平米"], "note": null },
+
+    { "id": "sho", "cat": "volume", "ja": "升", "romaji": "shō", "num": 2401, "den": 1331, "alias": [], "note": "明治の新京升。1升≒1.8039L" },
+    { "id": "go", "cat": "volume", "ja": "合", "romaji": "gō", "num": 2401, "den": 13310, "alias": ["1/10升"], "note": "お米1合の基準" },
+    { "id": "shaku-vol", "cat": "volume", "ja": "勺", "romaji": "shaku", "num": 2401, "den": 133100, "alias": ["1/10合"], "note": "1勺＝1/10合" },
+    { "id": "to", "cat": "volume", "ja": "斗", "romaji": "to", "num": 24010, "den": 1331, "alias": ["10升"], "note": null },
+    { "id": "koku", "cat": "volume", "ja": "石", "romaji": "koku", "num": 240100, "den": 1331, "alias": ["10斗", "100升"], "note": "容積の石。材積の石とは別" },
+    { "id": "l", "cat": "volume", "ja": "リットル", "romaji": "L", "num": 1, "den": 1, "alias": ["L"], "note": null },
+    { "id": "ml", "cat": "volume", "ja": "ミリリットル", "romaji": "mL", "num": 1, "den": 1000, "alias": ["ml", "cc"], "note": null },
+
+    { "id": "monme", "cat": "weight", "ja": "匁", "romaji": "monme", "num": 3, "den": 800, "alias": ["もんめ"], "note": "1匁＝3.75g" },
+    { "id": "kan", "cat": "weight", "ja": "貫", "romaji": "kan", "num": 15, "den": 4, "alias": ["1000匁"], "note": "1貫＝3.75kg" },
+    { "id": "kin", "cat": "weight", "ja": "斤", "romaji": "kin", "num": 3, "den": 5, "alias": ["16両"], "note": "1斤＝600g" },
+    { "id": "ryo", "cat": "weight", "ja": "両", "romaji": "ryō", "num": 3, "den": 80, "alias": ["1/16斤"], "note": "1両＝37.5g" },
+    { "id": "hyo", "cat": "weight", "ja": "俵", "romaji": "hyō", "num": 60, "den": 1, "alias": ["米1俵"], "note": "玄米60kgが基準。地域・年産で差あり" },
+    { "id": "kg", "cat": "weight", "ja": "キログラム", "romaji": "kg", "num": 1, "den": 1, "alias": ["kg"], "note": null },
+    { "id": "g", "cat": "weight", "ja": "グラム", "romaji": "g", "num": 1, "den": 1000, "alias": ["g"], "note": null },
+
+    { "id": "sai", "cat": "solid", "ja": "才", "romaji": "sai", "num": 100, "den": 35937, "alias": ["1尺×1尺×1寸"], "note": "木材の材積。1才≒0.0027826m³" },
+    { "id": "m3", "cat": "solid", "ja": "立方メートル", "romaji": "m3", "num": 1, "den": 1, "alias": ["m³", "立米"], "note": null }
+  ]
+}
